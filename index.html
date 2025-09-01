@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Viva Leve – Rebeca</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#0b0f12" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <style>body{background:#0b0f12;color:#eaf2f7;font-family:system-ui}.card{background:#12171b;margin:12px;padding:12px;border-radius:12px}</style>
+</head>
+<body>
+  <h1>Viva Leve – Rebeca</h1>
+  <div class="card">Meta de peso: 63.0 kg</div>
+  <div class="card">Altura: 160 cm</div>
+  <div class="card">Meta de água: 1600 ml</div>
+  <script>
+    const initCfg = {"nome": "Rebeca", "peso": null, "altura": 160, "metaPeso": 63.0, "acorda": "04:20", "dormir": "21:00", "metaAgua": 1600, "mounjaro": "sim", "mounjaroDoseMg": 5, "mounjaroDia": "sex", "nivel": "Leve"};
+    localStorage.setItem('viva_cfg', JSON.stringify(initCfg));
+    if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+  </script>
+</body>
+</html>
